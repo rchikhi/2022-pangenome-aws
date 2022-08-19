@@ -3,10 +3,13 @@
 
 In this hackathon session, you will perform yourself a cloud analysis using AWS. You will be given a temporary account valid only during for today's session. With this account you will be able to:
 
-A. create, launch a AWS cloud instance
-B. download SRA data at lightning speed
-C. perform a simple bioinformatics analysis for demonstration purposes
-D. cleanup the cloud resources after the analysis is performed
+Part A:.Ccreate, launch a AWS cloud instance
+
+Part B: Download SRA data at lightning speed
+
+Part C: Perform a simple bioinformatics analysis for demonstration purposes
+
+Part D: Cleanup the cloud resources after the analysis is performed
 
 **Warning**: Cloud analyses aren't free. The cost of this session will be covered by Alpaca/Pangaia. Please be mindful of not launching too large instances. You may check the https://instances.vantage.sh/ website for costs. 
 

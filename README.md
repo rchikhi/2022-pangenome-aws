@@ -3,7 +3,7 @@
 
 In this hackathon session, you will perform yourself a cloud analysis using AWS. You will be given a temporary account valid only during for today's session. With this account you will be able to:
 
-Part A:.Ccreate, launch a AWS cloud instance
+Part A: Create, launch a AWS cloud instance
 
 Part B: Download SRA data at lightning speed
 

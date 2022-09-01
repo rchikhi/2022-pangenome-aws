@@ -11,9 +11,11 @@ Part C: Perform a simple bioinformatics analysis for demonstration purposes
 
 Part D: Cleanup the cloud resources after the analysis is performed
 
-**Warning**: Cloud analyses aren't free. The cost of this session will be covered by Alpaca/Pangaia. Please be mindful of not launching too large instances. You may check the https://instances.vantage.sh/ website for costs. 
+**Warning**: Cloud analyses aren't free. The cost of this session will be covered by Institut Pasteur. Please be mindful of not launching too large instances. You may check the https://instances.vantage.sh/ website for costs. 
 
 The rest of this document will guide you towards the steps.
+
+## Part A: Create, launch a AWS cloud instance
 
 1. Signing in to EC2 console
 
@@ -80,7 +82,7 @@ At this point, congratulations! you have successfully created and connected to a
 
 
 
-D. Cleaning up
+## Part D: Cleaning up
 
 To clean up the instances, go to the EC2 panel: https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:
 

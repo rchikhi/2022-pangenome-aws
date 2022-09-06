@@ -11,6 +11,8 @@ and subscribe to this "Parabricks Pipeline". It should cost around $4.2 an hour 
 
 You may then connect to the instance. Note that the username is no longer 'ec2-user' but 'ubuntu'. Upon the first connection, it will format the allocated NVME SSD drive (which should be quick).
 
+Note that you apparently don't need to 'unsubscribe' at the end of our session. Deleting the instance will be enough (or at least, I hope).
+
 B. Preparing the analysis
 
 Refer to PartB to download the data to this instance. We'll get the same human genome and PCR-free Illumina reads. The instance come 'pre-packaged' with two disk volumes, one 140 GB with the system and a 825 GB entirely fresh. Let's use the latter.

@@ -18,4 +18,59 @@ Why CHM13v1.1 and not v2.0, you ask? It's because at the time of writing, the al
 
 2. S3
 
-S3 is the name of the storage service/protocol used by Amazon. 
+S3 is the name of the storage service/protocol used by Amazon. Amazon uses a lot of terminology for its services. A S3 'repository' is called a bucket. 
+
+You can think of a S3 bucket as someone's Dropbox with a special command-line tool to access it. Some buckets are public, some are private, and you can imagine in both cases that permissions are set so that buckets can be either read-only or read-write by everyone. Of course, the T2T buckets are read-only for us. 
+
+A particular aspect of S3 is that you may sometimes need a AWS account to download data if it is non-public. Yet, by default the S3 command-line tool always wants you to sign in to your account. We'll avoid that by passing the ```--no-sign-request``` argument.
+
+3. Downloading the data
+
+We'll get the data from https://github.com/marbl/CHM13.
+
+Go to your instance and create a folder.
+
+    mkdir data && cd data
+
+Check that you have enough space:
+
+    df -h .
+    
+Which should print:
+
+    Filesystem      Size  Used Avail Use% Mounted on
+    /dev/nvme0n1p1   30G  1,6G   29G   6% /
+
+Download CHM13 v1.1:
+
+    aws s3 --no-sign-request cp s3://human-pangenomics/T2T/CHM13/assemblies/chm13.draft_v1.1.fasta.gz .
+
+Download (a portion of) PCRfree reads:
+
+      aws s3 --no-sign-request cp s3://human-pangenomics/T2T/CHM13/10x/CHM13_prep5_S13_L002_R1_001.fastq.gz .
+      aws s3 --no-sign-request cp s3://human-pangenomics/T2T/CHM13/10x/CHM13_prep5_S13_L002_R2_001.fastq.gz .
+
+While download happens, make a note of the download speed.
+
+4. Comparing download speeds
+
+Try downloading the Illumina reads using wget instead of S3:
+
+    wget https://s3-us-west-2.amazonaws.com/human-pangenomics/T2T/CHM13/assemblies/chm13.draft_v1.1.fasta.gz
+    
+What do you notice?
+
+5. Getting aligned reads
+
+To see what the next bioinformatics steps would be, let us get BWA MEM and (attempt to) align the reads.
+
+    wget https://anaconda.org/bioconda/bwa/0.7.17/download/linux-64/bwa-0.7.17-h7132678_9.tar.bz2
+    tar xf bwa-0.7.17-h7132678_9.tar.bz2
+    
+But we cannot align immediately, we need to index the genome first.
+
+    bin/bwa index chm13.draft_v1.1.fasta.gz
+    
+Already this step takes much time (a few dozens of minutes at least), so we'll skip ahead and download the alignment directoy:
+
+    aws s3 --no-sign-request cp s3://human-pangenomics/T2T/CHM13/assemblies/alignments/chm13.draft_v1.1.pcrfree.bam .

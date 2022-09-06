@@ -78,3 +78,28 @@ Already this step takes much time (a few dozens of minutes at least), so we'll s
     aws s3 --no-sign-request cp s3://human-pangenomics/T2T/CHM13/assemblies/alignments/chm13.draft_v1.1.pcrfree.bam .
 
 Note however that this download will fail because the file is 250 GB large and we only have allocated a 30 GB disk space for our instance, 23 GB of which is used by the reads we just download. This is a valuable lession that properly dimensioning your cloud instance is critical! Yet, there are many ways to fix this (which we won't see here), such as redimensioning volumes and adding extra volumes.
+
+We will not pursue further bioinformatics analyses on this particular instance, but hopefully you get the idea!
+
+6. Bonus: getting data from SRA
+
+Before we shut down this instance, let us try downloading reads from the SRA. Note that it is a 'us-west-2' instance and SRA data is located at 'us-east-1', so download speeds are not optimal. Yet, in my tests, they remain reasonable.
+
+To get SRA data, we will use the excellent ffq tool that tells the location of the data. Fortunately, the instance at least has Python 3:
+
+   pip3 install ffq
+   
+Let us say we want to download the PacBio HiFi data that was used to generate the CHM13 assembly. The HiFi reads are only available from the SRA, here: https://www.ncbi.nlm.nih.gov/sra/?term=SRX789768*+CHM13
+
+Let's get the first accession:
+
+   ffq --aws SRX7897688
+   
+You should see:
+
+![image](https://user-images.githubusercontent.com/1218301/188704932-da88929f-d672-424a-a064-d76ba2e28a2b.png)
+
+
+Unfortuantely, the first link given by ffq appears to be private. Yet, the second link works. Note that you can always transform a ```http://``` to a S3 url by extracting the bucket name from the URL.
+
+    aws s3 cp aws s3  --no-sign-request cp s3://sra-pub-run-odp/sra/SRR11292120/SRR11292120 .

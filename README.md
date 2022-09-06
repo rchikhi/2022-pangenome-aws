@@ -6,7 +6,7 @@ You will be given a temporary account valid only during for today's session. Wit
 
 [Part A: Create, launch a AWS cloud instance](https://github.com/rchikhi/2022-pangenome-aws/blob/main/PartA.md)
 
-[Part B: Download SRA data at lightning speed](https://github.com/rchikhi/2022-pangenome-aws/blob/main/PartB.md)
+[Part B: Download genomics data at lightning speed](https://github.com/rchikhi/2022-pangenome-aws/blob/main/PartB.md)
 
 [Part C: Perform bioinformatics analyses](https://github.com/rchikhi/2022-pangenome-aws/blob/main/PartC.md)
 

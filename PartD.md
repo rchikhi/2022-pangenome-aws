@@ -1,9 +1,9 @@
 
 ## Part D: Cleaning up
 
-To clean up the instances, go to the EC2 panel: https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:
+To clean up the instances, go to the EC2 panel: [https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#Instances:)
 
-Then 'Terminate' your instance. This will delete it. Warning, this action cannot be undone.
+Then 'Terminate' your instance. This will delete it. Warning, this action cannot be undone and will also delete all the data you've analyzed.
 
 ![image](https://user-images.githubusercontent.com/1218301/185647144-165eedd5-86d1-47f7-9bf2-18b2903e1612.png)
 

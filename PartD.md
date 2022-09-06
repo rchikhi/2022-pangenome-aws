@@ -11,6 +11,6 @@ Then 'Terminate' your instance. This will delete it. Warning, this action cannot
 
 If it went well, the instance should now be marked terminated. It means the machine no longer exists and no costs are occurring for it.
 
-In addition, you may go to the 'Volumes' panel to check that the corresponding volume is also gone (it should be automatically deleted when the instance is terminated). Not only instance, but also volumes occur (small) houry costs.
+In addition, you may go to the 'Volumes' panel to check that the corresponding volume is also gone (it should be automatically deleted when the instance is terminated). Running instances, but also volumes that sit idly occur (small) houry costs.
 
 ![image](https://user-images.githubusercontent.com/1218301/185647941-db982fd5-d2a0-41db-bafb-0c2202b119ac.png)

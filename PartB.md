@@ -1,4 +1,4 @@
-## Part A: Downloading data to AWS
+## Part B: Downloading genomics data from AWS S3 to an AWS instance
 
 1. Data description
 
@@ -62,7 +62,9 @@ What do you notice?
 
 5. Getting aligned reads
 
-To see what the next bioinformatics steps would be, let us get BWA MEM and (attempt to) align the reads.
+To see what the next bioinformatics steps would be, let us get BWA MEM and (attempt to) align the reads. 
+
+The AWS instance is very much barebone, it is a fresh CentOS Linux with almost nothing preinstalled. Which means it doesn't have any bioinformatics tools, and it doesn't even have any compilation environment! (Try typing ``gcc``` for example.) For now we can work around it using a precompiled binary from conda (without installing conda):
 
     wget https://anaconda.org/bioconda/bwa/0.7.17/download/linux-64/bwa-0.7.17-h7132678_9.tar.bz2
     tar xf bwa-0.7.17-h7132678_9.tar.bz2

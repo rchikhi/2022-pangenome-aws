@@ -1,17 +1,18 @@
-# 2022-pangenome-aws
-2022 WABI Pangenome workshop hackathon (AWS intro)
+# 2022 WABI Pangenome workshop hackathon (AWS intro)
 
-In this hackathon session, you will perform yourself a cloud analysis using AWS. You will be given a temporary account valid only during for today's session. With this account you will be able to:
+This is a hackathon session where participants will perform themselves a cloud analysis using AWS. The goal of the session is to get first-hand experience in running a bioinformatics tasks with large resources, to see where the bottlenecks are, and inform on where algorithmic improvements are needed.
+
+You will be given a temporary account valid only during for today's session. With this account you will be able to:
 
 Part A: Create, launch a AWS cloud instance
 
 Part B: Download SRA data at lightning speed
 
-Part C: Perform a simple bioinformatics analysis for demonstration purposes
+Part C: Perform bioinformatics analyses
 
 Part D: Cleanup the cloud resources after the analysis is performed
 
-**Warning**: Cloud analyses aren't free. The cost of this session will be covered by Institut Pasteur. Please be mindful of not launching too large instances. You may check the https://instances.vantage.sh/ website for costs. 
+**Warning**: Cloud analyses can end up being clostly. This session will be covered by Institut Pasteur, but please be mindful of not launching too large instances. You may check the https://instances.vantage.sh/ website for costs. 
 
 The rest of this document will guide you towards the steps.
 
@@ -32,7 +33,7 @@ You should see this screen:
 
 2. Change your region
 
-Make sure your AWS region is 'US-east-1'. This is important, as the SRA is mirrored at this location. You can launch instances anywhere in the world, but in this session we will want to use instances that are close to SRA mirrors.
+Make sure your AWS region is 'US-west-2' (Oregon). Note that the SRA is mirrored at us-east-1, yet many T2T data is on us-west-2. You can launch instances anywhere in the world, but in this session we will want to use instances that are close to T2T data.
 
 To change the AWS region, click on the top right:
 
@@ -40,7 +41,8 @@ To change the AWS region, click on the top right:
 
 then:
 
-![image](https://user-images.githubusercontent.com/1218301/185642343-fa9e098d-161d-4b3e-bd00-3dadf37424b6.png)
+![image](https://user-images.githubusercontent.com/1218301/188676607-f788a8f1-e2a1-447d-b64e-55791cb643f8.png)
+
 
 3. Launch a cloud instance
 

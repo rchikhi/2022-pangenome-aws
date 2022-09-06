@@ -1,4 +1,4 @@
-## Part B: Downloading genomics data from AWS S3 to an AWS instance
+## Part B: Downloading genomics data quickly (using AWS instances)
 
 1. Data description
 
@@ -87,13 +87,13 @@ Before we shut down this instance, let us try downloading reads from the SRA. No
 
 To get SRA data, we will use the excellent ffq tool that tells the location of the data. Fortunately, the instance at least has Python 3:
 
-   pip3 install ffq
+    pip3 install ffq
    
 Let us say we want to download the PacBio HiFi data that was used to generate the CHM13 assembly. The HiFi reads are only available from the SRA, here: https://www.ncbi.nlm.nih.gov/sra/?term=SRX789768*+CHM13
 
 Let's get the first accession:
 
-   ffq --aws SRX7897688
+    ffq --aws SRX7897688
    
 You should see:
 
@@ -103,3 +103,5 @@ You should see:
 Unfortuantely, the first link given by ffq appears to be private. Yet, the second link works. Note that you can always transform a ```http://``` to a S3 url by extracting the bucket name from the URL.
 
     aws s3 cp aws s3  --no-sign-request cp s3://sra-pub-run-odp/sra/SRR11292120/SRR11292120 .
+
+It should be that the download is still almost as fast as from a us-west-2 bucket. This is a clear advantage compared to download data to e.g. a university cluster. At this point, refer to Part D to delete the instance.

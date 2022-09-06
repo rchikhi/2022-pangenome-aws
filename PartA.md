@@ -58,7 +58,9 @@ If all went well, you should see this in the instance panel of the EC2 console:
 
 ![image](https://user-images.githubusercontent.com/1218301/185645976-89fdea52-af39-4463-812d-d05b08e274a1.png)
 
-You may now connect to your instance using the public IP and the keypair. The default linux username is 'ec2-user' and there is no password. The linux command to connect is: `ssh -i [path-to-keyfile] ec2-user@[ip]'. If you managed to connect, you will see this:
+You may now connect to your instance using the public IP and the keypair. The default username to connect to is 'ec2-user' and there is no password. On linux, the command to connect is:  ```ssh -i [path-to-keyfile] ec2-user@[ip]```, and you will need to adjust permission of your keyfile beforehand: ```chmod 0600 [path-to-keyfile]```.
+
+If you managed to connect, you will see this:
 
 ![image](https://user-images.githubusercontent.com/1218301/185646720-adfd54b7-b126-4891-9c71-4b2d2bbb0f19.png)
 

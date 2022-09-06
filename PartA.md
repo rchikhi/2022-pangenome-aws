@@ -56,13 +56,15 @@ Finally, review all the details on the right of the screen and click 'Launch ins
 
 If all went well, you should see this in the instance panel of the EC2 console:
 
-![image](https://user-images.githubusercontent.com/1218301/185645976-89fdea52-af39-4463-812d-d05b08e274a1.png)
+![image](https://user-images.githubusercontent.com/1218301/188714992-79e55a79-5f8d-4d55-87e5-e5f36fe6467c.png)
+
+In the "Instance State" column, it will print "Initializing" first, then after a short while, "Running". 
+
+![image](https://user-images.githubusercontent.com/1218301/188686662-b279a6a0-d342-4547-ba32-c28cd524fd7a.png)
 
 You may now connect to your instance using the public IP and the keypair. The default username to connect to is 'ec2-user' and there is no password. On linux, the command to connect is:  ```ssh -i [path-to-keyfile] ec2-user@[ip]```, and you will need to adjust permission of your keyfile beforehand: ```chmod 0600 [path-to-keyfile]```.
 
 If you managed to connect, you will see this:
-
-![image](https://user-images.githubusercontent.com/1218301/188686662-b279a6a0-d342-4547-ba32-c28cd524fd7a.png)
 
 At this point, congratulations! you have successfully created and connected to a AWS instance. The machine is ready to perform bioinformatics analyses.
 

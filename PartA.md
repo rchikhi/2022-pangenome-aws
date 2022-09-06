@@ -64,7 +64,9 @@ In the "Instance State" column, it will print "Initializing" first, then after a
 
 You may now connect to your instance using the public IP and the keypair. The default username to connect to is 'ec2-user' and there is no password. On linux, the command to connect is:  ```ssh -i [path-to-keyfile] ec2-user@[ip]```, and you will need to adjust permission of your keyfile beforehand: ```chmod 0600 [path-to-keyfile]```.
 
-If you managed to connect, you will see this:
+If you managed to connect, you will see this screen:
+
+![image](https://user-images.githubusercontent.com/1218301/185646720-adfd54b7-b126-4891-9c71-4b2d2bbb0f19.png)
 
 At this point, congratulations! you have successfully created and connected to a AWS instance. The machine is ready to perform bioinformatics analyses.
 

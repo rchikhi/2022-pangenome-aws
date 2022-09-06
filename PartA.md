@@ -2,7 +2,7 @@
 
 1. Signing in to EC2 console
 
-Sign in to your AWS console using the provided link provided to you at the workshop.
+Sign in to your AWS console from your browser using the provided link provided to you at the workshop.
 It looks like: https://[somenumber].signin.aws.amazon.com/console
 
 <img src="https://user-images.githubusercontent.com/1218301/185639392-8e1aae31-4c34-4c13-b5d5-333c48b0f141.png" width=300>
@@ -58,7 +58,7 @@ If all went well, you should see this in the instance panel of the EC2 console:
 
 ![image](https://user-images.githubusercontent.com/1218301/185645976-89fdea52-af39-4463-812d-d05b08e274a1.png)
 
-You may now connect to your instance using the public IP and the keypair. The default linux username is 'ec2-user' and there is no password. If you managed to connect, you will see this:
+You may now connect to your instance using the public IP and the keypair. The default linux username is 'ec2-user' and there is no password. The linux command to connect is: `ssh -i [path-to-keyfile] ec2-user@[ip]'. If you managed to connect, you will see this:
 
 ![image](https://user-images.githubusercontent.com/1218301/185646720-adfd54b7-b126-4891-9c71-4b2d2bbb0f19.png)
 

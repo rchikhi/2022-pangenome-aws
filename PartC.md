@@ -1,6 +1,8 @@
 ## Perform (fast) genomics analyses 
 
-When I designed this hackathon session, I had in mind to demonstrate how fast it is possible to analyze data on the cloud. However, I was rapidly struck by reality: downloading reads may be fast, but even aligning them to a reference genome would be the next bottleneck. Some parts of the bioinformatics community has attempted to solve this problem by designing custom solutions, e.g. using GPU, FPGA, distributing computations on the cloud, etc. What I believe is the fastest solution available is DRAGEN from Illumina, which uses a FPGA. AWS provides machines with FPGA, and even with DRAGEN pre-installed! However, this come at a cost: a high subscription fee. Therefore I sought alternative solutions. NVidia has made some efforts accelerating some genomics workflows using GPUs. They provide a cheaper AWS subscription for their tools. This is what we will use here. I hope you will find the perspective of doing ultra-fast read alignment using GPUs interesting, and possibly fun, or at least worth continuining reading.
+When I designed this hackathon session, I had in mind to demonstrate how fast it is possible to analyze data on the cloud. (You probably noticed that the tutorial was written with the perspective of someone who was quite impatient.) However, I was struck by a grim reality: downloading reads may be fast there, but then even aligning to a reference genome would become the next bottleneck. Some parts of the bioinformatics community have attempted to solve this problem by designing custom solutions, e.g. aligning using GPU, FPGA, or distributed CPUs on the cloud, etc.. 
+
+What I believe is the fastest solution available is DRAGEN from Illumina, which uses a FPGA. AWS provides machines with FPGA, and even with DRAGEN pre-installed! However, this come at a cost: a high subscription fee. Therefore I sought alternative solutions. NVidia has made some efforts accelerating some genomics workflows using GPUs. They provide a cheaper AWS subscription for their tools. This is what we will use here. I hope you will find the perspective of doing ultra-fast read alignment using GPUs interesting, and possibly fun, or at least worth continuining reading.
 
 A. Setting up a Parabricks instance
 
@@ -15,3 +17,8 @@ Refer to PartB to download the data to this instance. We'll get the same human g
 
     cd /mnt/disks/local
     df -h .
+
+We'll get a pre-indexed human genome also:
+
+    aws s3 --no-sign-request cp s3://parabricks.sample/parabricks_sample.tar.gz .
+    tar xf parabricks_sample.tar.gz 

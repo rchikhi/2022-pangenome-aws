@@ -62,7 +62,7 @@ You may now connect to your instance using the public IP and the keypair. The de
 
 If you managed to connect, you will see this:
 
-![image](https://user-images.githubusercontent.com/1218301/185646720-adfd54b7-b126-4891-9c71-4b2d2bbb0f19.png)
+![image](https://user-images.githubusercontent.com/1218301/188686662-b279a6a0-d342-4547-ba32-c28cd524fd7a.png)
 
 At this point, congratulations! you have successfully created and connected to a AWS instance. The machine is ready to perform bioinformatics analyses.
 

@@ -14,7 +14,7 @@ Part C: Perform bioinformatics analyses
 
 **Warning**: Cloud analyses can end up being clostly. This session will be covered by Institut Pasteur, but please be mindful of not launching too large instances. You may check the https://instances.vantage.sh/ website for costs. 
 
-The rest of this document will guide you towards the steps.
+The hackathon starts with a heavily guided introduction, where all the steps are shown.
 
 
 To get started, go to [Part A](https://github.com/rchikhi/2022-pangenome-aws/blob/main/PartA.md).

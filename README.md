@@ -8,7 +8,7 @@ You will be given a temporary account valid only during for today's session. Wit
 
 [Part B: Download SRA data at lightning speed](https://github.com/rchikhi/2022-pangenome-aws/blob/main/PartB.md)
 
-Part C: Perform bioinformatics analyses
+[Part C: Perform bioinformatics analyses](https://github.com/rchikhi/2022-pangenome-aws/blob/main/PartC.md)
 
 [Part D: Cleanup the cloud resources after the analysis is performed](https://github.com/rchikhi/2022-pangenome-aws/blob/main/PartD.md)
 

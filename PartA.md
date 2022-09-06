@@ -71,3 +71,5 @@ If you managed to connect, you will see this screen:
 At this point, congratulations! you have successfully created and connected to a AWS instance. The machine is ready to perform bioinformatics analyses.
 
 Good job! Please report your progress here: https://docs.google.com/spreadsheets/d/1axjB4lX0IsGnZ8bdzeABP2tiWqBj530bSHLWXeGX_Hc/edit?usp=sharing
+
+You may now go to [Part B](https://github.com/rchikhi/2022-pangenome-aws/blob/main/PartB.md)

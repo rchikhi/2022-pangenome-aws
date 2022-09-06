@@ -1,4 +1,4 @@
-## Perform (fast) genomics analyses 
+##  Perform (fast) genomics analyses 
 
 When I designed this hackathon session, I had in mind to demonstrate how fast it is possible to analyze data on the cloud. (You probably noticed that the tutorial was written with the perspective of someone who was quite impatient.) However, I was struck by a grim reality: downloading reads may be fast there, but then even aligning to a reference genome would become the next bottleneck. Some parts of the bioinformatics community have attempted to solve this problem by designing custom solutions, e.g. aligning using GPU, FPGA, or distributed CPUs on the cloud, etc.. 
 

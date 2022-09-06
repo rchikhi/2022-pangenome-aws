@@ -5,7 +5,7 @@
 We will download several types of data:
 - a human reference genome
 - a set of Illumina reads
-- the same set of reads, pre-aligned
+- the same set of reads but pre-aligned
 
 To illustrate that download speeds are really fast on AWS, we chose to create our instance on the us-west-2 region, which happens to be the same region where the T2T human genome is hosted (https://github.com/marbl/CHM13).
 

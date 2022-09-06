@@ -76,3 +76,5 @@ But we cannot align immediately, we need to index the genome first.
 Already this step takes much time (a few dozens of minutes at least), so we'll skip ahead and download the alignment directoy:
 
     aws s3 --no-sign-request cp s3://human-pangenomics/T2T/CHM13/assemblies/alignments/chm13.draft_v1.1.pcrfree.bam .
+
+Note however that this download will fail because the file is 250 GB large and we only have allocated a 30 GB disk space for our instance, 23 GB of which is used by the reads we just download. This is a valuable lession that properly dimensioning your cloud instance is critical! Yet, there are many ways to fix this (which we won't see here), such as redimensioning volumes and adding extra volumes.

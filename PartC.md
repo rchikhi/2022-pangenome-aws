@@ -22,3 +22,17 @@ We'll get a pre-indexed human genome also:
 
     aws s3 --no-sign-request cp s3://parabricks.sample/parabricks_sample.tar.gz .
     tar xf parabricks_sample.tar.gz 
+
+C. Aligning reads
+
+Let's first try with bwa mem, to get a sense of speed.
+
+
+
+We are now ready to use a GPU aligner:
+
+    pbrun fq2bam --ref parabricks_sample/Ref/Homo_sapiens_assembly38.fasta \
+                 --in-fq CHM13_prep5_S13_L002_R2_001.fastq.gz CHM13_prep5_S13_L002_R2_001.fastq.gz \
+                 --out-bam output.bam
+                 
+How long did it take? Some food for hackathon thoughts: How much faster is it than bwa mem or minimap2? How close are we to real-time genomics analyses?

@@ -42,3 +42,9 @@ We are now ready to use a GPU aligner:
                  --out-bam output.bam
                  
 How long did it take? Some food for hackathon thoughts: How much faster is it than bwa mem or minimap2? How close are we to real-time precision medicine?
+
+D. Hackathon part
+
+We finally get to the end of this intro. You may now use the remaining time to use the instance as you want, taking advantage of a dedicated 48-cores 4-GPU machine you're root on to try the speed of your favorite software. 
+
+After you are done, move to Part D to cleanup the instance.

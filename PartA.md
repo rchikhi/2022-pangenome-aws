@@ -8,7 +8,9 @@ The link to this document will be displayed on the room whiteboard.
 Please do the following:
 
 a. Pair up with another participant. (We do not have enough credentials for everyone to participate individually.) You two will do the hackathon together.
+
 b. Open the private document, find an unassigned row, and write your two names next to the credentials
+
 c. The credentials displayed next to your name will be the ones you will use throughout the session.
 
 1. Signing in to EC2 console

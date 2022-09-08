@@ -1,6 +1,6 @@
 ## Part A: Create, launch a AWS cloud instance
 
-0. Logistics
+### 0. Logistics
 
 The hackathon will provide you with user/password credentials.
 The credentials are displayed on a private document.
@@ -13,7 +13,7 @@ b. Open the private document, find an unassigned row, and write your two names n
 
 c. The credentials displayed next to your name will be the ones you will use throughout the session.
 
-1. Signing in to EC2 console
+### 1. Signing in to EC2 console
 
 Sign in to your AWS console from your browser using these credentials.
 The sign-in link will be displayed on top of the private document and will look like: https://[somenumber].signin.aws.amazon.com/console
@@ -26,7 +26,7 @@ You should see this screen:
 
 ![image](https://user-images.githubusercontent.com/1218301/185641343-6be184ad-ef9d-4a48-b7e2-b6aa5640cd4c.png)
 
-2. Change your region
+### 2. Change your region
 
 Make sure your AWS region is 'US-west-2' (Oregon). Note that the SRA is mirrored at us-east-1, yet many [T2T](https://github.com/marbl/CHM13) & [pangenomics](https://github.com/human-pangenomics/HG002_Data_Freeze_v1.0) data is hosted on us-west-2. You can launch instances anywhere in the world, but in this session we will want to use instances that are close to T2T data.
 
@@ -39,7 +39,7 @@ then:
 ![image](https://user-images.githubusercontent.com/1218301/188676607-f788a8f1-e2a1-447d-b64e-55791cb643f8.png)
 
 
-3. Launch a cloud instance
+### 3. Launch a cloud instance
 
 Next, go to "Launch a virtual machine". You should see:
 

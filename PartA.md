@@ -1,4 +1,4 @@
-## Part A: Create, launch a AWS cloud instance
+## Part A: Create & run an AWS cloud instance
 
 ### 0. Logistics
 

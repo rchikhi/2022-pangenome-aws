@@ -28,7 +28,7 @@ You should see this screen:
 
 2. Change your region
 
-Make sure your AWS region is 'US-west-2' (Oregon). Note that the SRA is mirrored at us-east-1, yet many T2T & pangenomics data is on us-west-2. You can launch instances anywhere in the world, but in this session we will want to use instances that are close to T2T data.
+Make sure your AWS region is 'US-west-2' (Oregon). Note that the SRA is mirrored at us-east-1, yet many [T2T](https://github.com/marbl/CHM13) & [pangenomics](https://github.com/human-pangenomics/HG002_Data_Freeze_v1.0) data is hosted on us-west-2. You can launch instances anywhere in the world, but in this session we will want to use instances that are close to T2T data.
 
 To change the AWS region, click on the top right:
 

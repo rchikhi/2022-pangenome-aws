@@ -28,7 +28,7 @@ A particular aspect of S3 is that you may sometimes need a AWS account to downlo
 
 We'll get the data from https://github.com/marbl/CHM13.
 
-Go to your instance and create a folder.
+Go to your instance and create a folder. Please type the following commands inside the SSH session to your instance, not locally on your machine.
 
     mkdir data && cd data
 

@@ -1,6 +1,6 @@
 ## Part B: Downloading genomics data quickly (using AWS instances)
 
-### 1. Data description
+### 1. Data description
 
 We will download several types of data:
 - a human reference genome

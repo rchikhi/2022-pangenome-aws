@@ -1,6 +1,6 @@
 ## Part B: Downloading genomics data quickly (using AWS instances)
 
-1. Data description
+### 1. Data description
 
 We will download several types of data:
 - a human reference genome
@@ -16,7 +16,7 @@ Why Illumina reads you ask? It's become, for some reason, T2T didn't release the
 
 Why CHM13v1.1 and not v2.0? Because I had other plans in an earlier version of this document. But it shouldn't make a difference here, and you should feel free to download the v2.0 if you wish.
 
-2. S3
+### 2. Overview of S3
 
 S3 is the name of the storage service/protocol used by Amazon. Amazon uses a lot of terminology for its services. A S3 'repository' is called a bucket. 
 
@@ -24,7 +24,7 @@ You can think of a S3 bucket as someone's Dropbox with a special command-line to
 
 A particular aspect of S3 is that you may sometimes need a AWS account to download data if it is non-public. Yet, by default the S3 command-line tool always wants you to sign in to your account. We'll avoid that by passing the ```--no-sign-request``` argument.
 
-3. Downloading the data
+### 3. Downloading the data
 
 We'll get the data from https://github.com/marbl/CHM13.
 
@@ -52,7 +52,7 @@ Download (a portion of) PCRfree reads:
 
 While download happens, make a note of the download speed.
 
-4. Comparing download speeds
+### 4. Comparing download methods
 
 Try downloading the Illumina reads using wget instead of S3:
 
@@ -60,7 +60,7 @@ Try downloading the Illumina reads using wget instead of S3:
     
 What do you notice?
 
-5. Getting aligned reads
+### 5. Getting aligned reads
 
 To see what the next bioinformatics steps would be, let us get BWA MEM and (attempt to) align the reads. 
 
@@ -81,7 +81,7 @@ Already this step takes much time (a few dozens of minutes at least). We could s
 
 We will not pursue further bioinformatics analyses on this particular instance, but hopefully you get the idea!
 
-6. Bonus: getting data from SRA
+### 6. Bonus: getting data from SRA
 
 Before we shut down this instance, let us try downloading reads from the SRA. Note that it is a 'us-west-2' instance and SRA data is located at 'us-east-1', so download speeds are not optimal. Yet, in my tests, they remain reasonable.
 

@@ -1,8 +1,19 @@
 ## Part A: Create, launch a AWS cloud instance
 
+0. Logistics
+
+The hackathon will provide you with user/password credentials.
+The credentials are displayed on a private document.
+The link to this document will be displayed on the room whiteboard.
+Please do the following:
+
+a. Pair up with another participant. (We do not have enough credentials for everyone to participate individually.) You two will do the hackathon together.
+b. Open the private document, find an unassigned row, and write your two names next to the credentials
+c. The credentials displayed next to your name will be the ones you will use throughout the session.
+
 1. Signing in to EC2 console
 
-Sign in to your AWS console from your browser using the provided link provided to you at the workshop.
+Sign in to your AWS console from your browser using these credentials.
 It looks like: https://[somenumber].signin.aws.amazon.com/console
 
 <img src="https://user-images.githubusercontent.com/1218301/185639392-8e1aae31-4c34-4c13-b5d5-333c48b0f141.png" width=300>

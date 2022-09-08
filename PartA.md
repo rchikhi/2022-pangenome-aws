@@ -47,11 +47,11 @@ Next, go to "Launch a virtual machine". You should see:
 
 Give a meaningful name to your machine, preferably one that includes your username, as the list of launched machines will be shared across all participants. E.g.: "participant1-mymachine". Then, select Amazon Linux as distribution (latest version is fine).
 
-Click on the instance type to change it. I recommend "c5a.8xlarge", as it is one of the cheapeast options that guarantees ultra-fast download speeds (10 Gbits).
+Click on the instance type to change it. I recommend "c5a.8xlarge", as it is one of the cheapeast options that guarantees ultra-fast download speeds (10 Gbits). You can see a list of all available instance types on this (unofficial) website: https://ec2instances.github.io/
 
 ![image](https://user-images.githubusercontent.com/1218301/185644210-89c943df-8d5a-4a9a-8435-cda9fe92f28d.png)
 
-Then, create your own keypair. It is important as this will allow you to connect securely to the instance via SSH. When your keypair is created, your browser will automatically download it. Keypairs are confidential, and should never be published publicly. At the end of today's session, you may delete the keypair, as it will not be used anymore.
+Then, create your own "keypair". It is important as this will allow you to connect securely to the instance via SSH. You can read more about keypairs [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html), but it is the same system as connecting securely to another Linux machine via SSH. When the keypair is created by Amazon EC2, your browser will automatically download it. Keypairs are confidential, and should never be published publicly. At the end of today's session, you may delete the keypair, as it will not be used anymore.
 
 ![image](https://user-images.githubusercontent.com/1218301/185644300-9eef49cf-0ed8-406f-b8fd-97cdf484a1b9.png)
 

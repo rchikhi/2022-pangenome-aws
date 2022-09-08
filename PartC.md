@@ -4,7 +4,7 @@ When I designed this hackathon session, I had in mind to demonstrate that it is 
 
 What I believe is the fastest solution available is DRAGEN from Illumina, which uses a FPGA. AWS provides machines with FPGA, and even with DRAGEN pre-installed! However, this come at a cost: [a high subscription fee](https://aws.amazon.com/marketplace/pp/prodview-ypz2tpzy6f5xq). This is great but a bit expensive for a 30-participants hackathon. Therefore I sought alternative solutions. NVidia has made some efforts accelerating [many genomics workflows](https://docs.nvidia.com/clara/parabricks/v3.5/text/software_overview.html#software-tools-overview) using GPUs, in particular variant calling from raw reads, which they claim is [30x-60x faster](https://www.nvidia.com/en-us/clara/genomics/). Now with cloud resource anyone can put that claim to the test without owning a GPU. Nvidia provides a relatively cheap ($0.3/hour) AWS subscription for their tools. This is what we will use here. I hope you will find the perspective of doing fast human variant calling using GPUs interesting, and possibly fun, or at least worth continuining reading.
 
-A. Setting up a Parabricks instance
+### A. Setting up a Parabricks instance
 
 Go to https://aws.amazon.com/marketplace/pp/prodview-apbngojlskcyq
 and subscribe to this "Parabricks Pipeline". It should cost around $4.2 an hour using their recommended instance (a beefy g4dn.12xlarge). Make sure you are in the correct region for this session (us-west-2).
@@ -13,7 +13,7 @@ You may then connect to the instance. Note that the username is no longer 'ec2-u
 
 Note that you apparently don't need to 'unsubscribe' at the end of our session. Deleting the instance will be enough (or at least, I hope).
 
-B. Preparing the analysis
+### B. Preparing the analysis
 
 Refer to PartB to download the data to this instance. We'll get the same human genome and PCR-free Illumina reads. The instance come 'pre-packaged' with two disk volumes, one 140 GB with the system and a 825 GB entirely fresh. Let's use the latter.
 
@@ -25,7 +25,7 @@ We'll get a pre-indexed human genome also:
     aws s3 --no-sign-request cp s3://parabricks.sample/parabricks_sample.tar.gz .
     tar xf parabricks_sample.tar.gz 
 
-C. Aligning reads
+### C. Aligning reads
 
 Let's first try with bwa mem, to get a sense of speed.
 
@@ -43,8 +43,8 @@ We are now ready to use a GPU aligner:
                  
 How long did it take? Some food for hackathon thoughts: How much faster is it than bwa mem or minimap2? How close are we to real-time precision medicine?
 
-D. Hackathon part
+### D. Hackathon part
 
-We finally get to the end of this intro. You may now use the remaining time to use the instance as you want, taking advantage of a dedicated 48-cores 4-GPU machine you're root on to try the speed of your favorite software. 
+We finally get to the end of this tutorial. You may now use the remaining time to use the instance as you want, taking advantage of a dedicated 48-cores 4-GPU machine you're root on to try the speed of your favorite software. 
 
 After you are done, move to Part D to cleanup the instance.

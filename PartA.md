@@ -16,7 +16,7 @@ c. The credentials displayed next to your name will be the ones you will use thr
 1. Signing in to EC2 console
 
 Sign in to your AWS console from your browser using these credentials.
-It looks like: https://[somenumber].signin.aws.amazon.com/console
+The sign-in link will be displayed on top of the private document and will look like: https://[somenumber].signin.aws.amazon.com/console
 
 <img src="https://user-images.githubusercontent.com/1218301/185639392-8e1aae31-4c34-4c13-b5d5-333c48b0f141.png" width=300>
 

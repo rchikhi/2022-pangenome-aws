@@ -7,7 +7,7 @@ What I believe is the fastest solution available is DRAGEN from Illumina, which 
 ### A. Setting up a Parabricks instance
 
 Go to https://aws.amazon.com/marketplace/pp/prodview-apbngojlskcyq
-and subscribe to this "Parabricks Pipeline". It should cost around $4.2 an hour using their recommended instance (a beefy g4dn.12xlarge). Make sure you are in the correct region for this session (us-west-2).
+and subscribe to this "Parabricks Pipeline". It should cost around $4.2 an hour using their recommended instance (a beefy g4dn.12xlarge). Make sure you are in the correct region for this session (us-west-2), and give it a unique name so you can later find it in the EC2 console. (Launching through EC2 enables to give a unique name, not with 'launch from website').
 
 You may then connect to the instance. Note that the username is no longer 'ec2-user' but 'ubuntu'. Upon the first connection, it will format the allocated NVME SSD drive (which should be quick).
 

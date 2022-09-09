@@ -49,7 +49,7 @@ Give a meaningful name to your machine, preferably one that includes your userna
 
 Click on the instance type to change it. I recommend "c5a.8xlarge", as it is one of the cheapeast options that guarantees ultra-fast download speeds (10 Gbits). You can see a list of all available instance types on this (unofficial) website: https://ec2instances.github.io/
 
-![image](https://user-images.githubusercontent.com/1218301/185644210-89c943df-8d5a-4a9a-8435-cda9fe92f28d.png)
+![image](https://user-images.githubusercontent.com/1218301/189290418-40826bf2-779e-4525-9675-dc5c4525d73c.png)
 
 Then, create your own "keypair". It is important as this will allow you to connect securely to the instance via SSH. You can read more about keypairs [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html), but it is the same system as connecting securely to another Linux machine via SSH. When the keypair is created by Amazon EC2, your browser will automatically download it. Keypairs are confidential, and should never be published publicly. At the end of today's session, you may delete the keypair, as it will not be used anymore.
 

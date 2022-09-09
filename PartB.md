@@ -102,6 +102,6 @@ You should see:
 
 Unfortuantely, the first link given by ffq appears to point to a private bucket (I get a 'Forbidden' error when trying to download) . Yet, the second link works. Note that you can always transform a ```http://``` to a S3 url by extracting the bucket name from the URL.
 
-    aws s3 cp aws s3  --no-sign-request cp s3://sra-pub-run-odp/sra/SRR11292120/SRR11292120 .
+    aws s3 --no-sign-request cp s3://sra-pub-run-odp/sra/SRR11292120/SRR11292120 .
 
 It should be that the download is still almost as fast as from a us-west-2 bucket. This is a clear advantage compared to download data to e.g. a university cluster. At this point, refer to [Part D](https://github.com/rchikhi/2022-pangenome-aws/blob/main/PartD.md) to delete the instance. If there is more time, you may go attempt Part C.

@@ -73,7 +73,7 @@ But we cannot align immediately, we need to index the genome first.
 
     bin/bwa index chm13.draft_v1.1.fasta.gz
     
-Already this step takes much time (a few dozens of minutes at least). We could skip ahead and download a pre-made BAM alignment directly, like this:
+Already this step takes much time (a few dozens of minutes at least). So you can either keep it running (in a tmux terminal in the background) or just kill it after a few minutes. The point is to realize that it's slow.. One thing we could do, is skip ahead and download a pre-made BAM alignment directly, like this:
 
     aws s3 --no-sign-request cp s3://human-pangenomics/T2T/CHM13/assemblies/alignments/chm13.draft_v1.1.pcrfree.bam .
 

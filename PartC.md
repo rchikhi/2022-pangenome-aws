@@ -15,7 +15,7 @@ Note that you apparently don't need to 'unsubscribe' at the end of our session. 
 
 ### B. Preparing the analysis
 
-Refer to PartB to download the data to this instance. We'll get the same human genome and PCR-free Illumina reads. The instance come 'pre-packaged' with two disk volumes, one 140 GB with the system and a 825 GB entirely fresh. Let's use the latter.
+Refer to PartB to download the data to this new instance. (You will have deleted the previous instance, that's fine, the data is quick to download anyway.) We'll get the same human genome and PCR-free Illumina reads. The instance come 'pre-packaged' with two disk volumes, one 140 GB with the system and a 825 GB entirely fresh. Let's use the latter.
 
     cd /mnt/disks/local
     df -h .

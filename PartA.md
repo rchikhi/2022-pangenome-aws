@@ -55,7 +55,7 @@ Then, create your own "keypair". It is important as this will allow you to conne
 
 ![image](https://user-images.githubusercontent.com/1218301/185644300-9eef49cf-0ed8-406f-b8fd-97cdf484a1b9.png)
 
-You may leave security group as default. If you get an error when launcing the instance, go back and edit the security group name so that it is unique (eg. add your name at the end of it).
+You may leave security group as default. If you get an error when launching the instance, go back and edit the security group name so that it is unique (eg. add your name at the end of it).
 
 ![image](https://user-images.githubusercontent.com/1218301/185644401-8bb8460d-777d-47a1-b265-1c4d1b4bcfd4.png)
 
